@@ -1,0 +1,8 @@
+<div class="container">
+    <label for="number-input">Ingrese un número:</label>
+    <input id="number-input" type="text" (input)="onInputChange($event)">
+    <div *ngIf="isCapicua" class="message">
+      ¡El número {{ numberInput }} es capicúa!
+    </div>
+  </div>
+  
